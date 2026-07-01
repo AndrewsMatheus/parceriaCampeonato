@@ -41,7 +41,12 @@ export function buildChampionship(rawRanking = [], rawMatches = []) {
   const c = { players: {}, ranking: [], matches: [], headToHead: {}, duos: {}, teams: {}, timeline: [], statistics: {} };
   rawRanking.forEach((r, i) => {
     const f = rankingFields(r, i);
-    c.players[f.name] = { ...emptyPlayer(f.name), ...f, currentMMR: INITIAL_MMR, finalMMR: f.finalMMR };
+    c.players[f.name] = {
+      ...emptyPlayer(f.name),
+      rank: f.rank,
+      finalMMR: f.finalMMR,
+      records: { ...emptyPlayer(f.name).records, reportedWins: f.wins, reportedLosses: f.losses, reportedWinrate: f.winrate },
+    };
   });
   rawMatches.forEach((match, idx) => processMatch(c, match, idx + 1));
   Object.values(c.players).forEach(p => {

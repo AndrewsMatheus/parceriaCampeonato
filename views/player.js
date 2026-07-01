@@ -1,7 +1,7 @@
 import { card, kpi } from '../components/card.js';
 import { table } from '../components/table.js';
 import { lineChart, bars } from '../js/charts.js';
-import { fmt, pct } from '../js/utils.js';
+import { escapeHtml, fmt, pct } from '../js/utils.js';
 
 /**
  * Renders a complete player profile page.
@@ -27,7 +27,7 @@ export function player(championship, name = '') {
 
   return `
     <div class="page-head">
-      <h1>${p.name}</h1>
+      <h1>${escapeHtml(p.name)}</h1>
       <span class="pill">Rank #${p.rank}</span>
     </div>
     <div class="grid cards">
