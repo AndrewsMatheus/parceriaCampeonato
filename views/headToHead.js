@@ -1,0 +1,2 @@
+import {table} from '../components/table.js';import {pct} from '../js/utils.js';
+export function headToHead(c){const rows=Object.values(c.headToHead).map(h=>({players:h.players.join(' vs '),same:`${h.same.wins}/${h.same.losses} (${pct(h.same.winrate)})`,opposite:`${h.opposite.wins}/${h.opposite.losses} (${pct(h.opposite.winrate)})`}));return`<div class="page-head"><h1>Confrontos</h1></div>${table([{key:'players',label:'Jogadores'},{key:'same',label:'Mesmo time V/D'},{key:'opposite',label:'Adversários V/D'}],rows)}`}
