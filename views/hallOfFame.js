@@ -9,11 +9,13 @@ export function hallOfFame(c) {
   const item = (t, v) => card(t, `<p class="value gold">${escapeHtml(v)}</p>`);
   const playerName = p => p?.name || '-';
   const first = mmr => playerName(ps.find(p => p.mmrHistory.some(v => v >= mmr)));
+  const bestGainPlayer = playerName(ps.find(p => p.records.bestGain === c.statistics.bestGain));
+  const worstLossPlayer = playerName(ps.find(p => p.records.worstLoss === c.statistics.worstLoss));
 
   return `<div class="page-head"><h1>Hall da Fama</h1></div><div class="grid three">
     ${item('Maior MMR', `${playerName(ps[0])} · ${fmt(ps[0]?.finalMMR)}`)}
-    ${item('Maior ganho', fmt(c.statistics.bestGain))}
-    ${item('Maior perda', fmt(c.statistics.worstLoss))}
+    ${item('Maior ganho', `${bestGainPlayer} · ${fmt(c.statistics.bestGain)}`)}
+    ${item('Maior perda', `${worstLossPlayer} · ${fmt(c.statistics.worstLoss)}`)}
     ${item('Melhor winrate', winrateLeader ? `${winrateLeader.name} · ${pct(winrateLeader.winrate)}` : '-')}
     ${item('Mais vitórias', playerName(ps.slice().sort((a, b) => b.wins - a.wins)[0]))}
     ${item('Mais derrotas', playerName(ps.slice().sort((a, b) => b.losses - a.losses)[0]))}
