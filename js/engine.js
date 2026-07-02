@@ -13,11 +13,26 @@ const inc = (o, k, win) => {
   o[k].winrate = o[k].wins / o[k].matches * 100;
 };
 
+function extractRanking(data) {
+  if (Array.isArray(data)) return data;
+  if (data?.championship?.players) return data.championship.players;
+  if (data?.players) return data.players;
+  return [];
+}
+
+function normalizePlayerEntry(row) {
+  return {
+    name: row.name || row.player || row.jogador || row.nome,
+    role: row.role || row.funcao || row.cargo || '',
+    lp: row.lp ?? row.mmr ?? row.delta ?? 0,
+  };
+}
+
 export async function loadData() {
   try {
     const [r, m] = await Promise.all([fetch('data/ranking.json'), fetch('data/matches.json')]);
     if (!r.ok || !m.ok) throw new Error('missing');
-    return { ranking: await r.json(), matches: await m.json(), source: 'auto' };
+    return { ranking: extractRanking(await r.json()), matches: await m.json(), source: 'auto' };
   } catch {
     return null;
   }
@@ -30,7 +45,7 @@ export async function readImported(files) {
     fr.onerror = rej;
     fr.readAsText(f);
   });
-  return { ranking: await parse(files.ranking), matches: await parse(files.matches), source: 'imported' };
+  return { ranking: extractRanking(await parse(files.ranking)), matches: await parse(files.matches), source: 'imported' };
 }
 
 function rankingFields(row, i) {
@@ -59,8 +74,8 @@ export function buildChampionship(rawRanking = [], rawMatches = []) {
 }
 
 function processMatch(c, match, n) {
-  const blue = getSide(match, 'blue');
-  const red = getSide(match, 'red');
+  const blue = getSide(match, 'blue').map(normalizePlayerEntry);
+  const red = getSide(match, 'red').map(normalizePlayerEntry);
   const w = winnerSide(match);
   const blueWin = w === 'blue' || blue.some(p => p.name === match.winner);
   const sides = [{ name: 'blue', team: blue, win: blueWin }, { name: 'red', team: red, win: !blueWin }];
@@ -78,9 +93,10 @@ function processMatch(c, match, n) {
 }
 
 function updatePlayerFromMatch(c, pl, side, opp, n) {
-  const p = c.players[pl.name] ??= emptyPlayer(pl.name);
-  const delta = +(pl.lp ?? pl.mmr ?? 0);
-  const role = normalizeRole(pl.role || pl.funcao);
+  const name = pl.name || pl.player || pl.jogador;
+  const p = c.players[name] ??= emptyPlayer(name);
+  const delta = +(pl.lp ?? pl.mmr ?? pl.delta ?? 0);
+  const role = normalizeRole(pl.role || pl.funcao || pl.role);
   p.currentMMR += delta;
   p[side.win ? 'wins' : 'losses']++;
   p.matches.push(n);
@@ -92,8 +108,8 @@ function updatePlayerFromMatch(c, pl, side, opp, n) {
   p.streaks.bestWin = Math.max(p.streaks.bestWin, p.streaks.currentWin);
   p.streaks.bestLoss = Math.max(p.streaks.bestLoss, p.streaks.currentLoss);
   inc(p.roles, role, side.win);
-  side.team.filter(t => t.name !== pl.name).forEach(t => inc(p.teammates, t.name, side.win));
-  opp.forEach(o => inc(p.opponents, o.name, side.win));
+  side.team.filter(t => (t.name || t.player) !== name).forEach(t => inc(p.teammates, t.name || t.player, side.win));
+  opp.forEach(o => inc(p.opponents, o.name || o.player, side.win));
 }
 
 function addSameSidePairs(c, team, win) {
