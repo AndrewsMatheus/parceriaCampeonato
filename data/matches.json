@@ -1,0 +1,4899 @@
+[
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": 240
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": 240
+        },
+        {
+          "role": "MID",
+          "player": "JP",
+          "lp": 240
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 240
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": 240
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -153
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -153
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -153
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -153
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -153
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 244
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 230
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 244
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 230
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 244
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": -147
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": -147
+        },
+        {
+          "role": "MID",
+          "player": "JP",
+          "lp": -147
+        },
+        {
+          "role": "ADC",
+          "player": "Gabão",
+          "lp": -154
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -147
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": 222
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 235
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 235
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 223
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 235
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -149
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -142
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -149
+        },
+        {
+          "role": "ADC",
+          "player": "Gabão",
+          "lp": -150
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -143
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 226
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 214
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 227
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 214
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 214
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": -139
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -144
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -144
+        },
+        {
+          "role": "ADC",
+          "player": "Gabão",
+          "lp": -144
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -145
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 219
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": 244
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 229
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 219
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 230
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -149
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -143
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -149
+        },
+        {
+          "role": "ADC",
+          "player": "Gui Barbosa",
+          "lp": -143
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": -150
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 180
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 181
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 180
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 172
+        },
+        {
+          "role": "SUP",
+          "player": "Bughi",
+          "lp": 180
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -123
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": -118
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -134
+        },
+        {
+          "role": "ADC",
+          "player": "Gabão",
+          "lp": -117
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -112
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": 181
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 162
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 202
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 154
+        },
+        {
+          "role": "SUP",
+          "player": "Bughi",
+          "lp": 162
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -98
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": -102
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -99
+        },
+        {
+          "role": "ADC",
+          "player": "Gabão",
+          "lp": -103
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -99
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 192
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 202
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 193
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 192
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 202
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Bobzera",
+          "lp": -163
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -137
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -148
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -121
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -131
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 260
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 197
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 188
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 188
+        },
+        {
+          "role": "SUP",
+          "player": "shioN",
+          "lp": 276
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -125
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -131
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -147
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -121
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -130
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 236
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 182
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 209
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 173
+        },
+        {
+          "role": "SUP",
+          "player": "shioN",
+          "lp": 248
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -114
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -128
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -114
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -110
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -118
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 179
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 197
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 179
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 172
+        },
+        {
+          "role": "SUP",
+          "player": "shioN",
+          "lp": 252
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -150
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -124
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -137
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -119
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -123
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 180
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 198
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 214
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 174
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 188
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -141
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -125
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -121
+        },
+        {
+          "role": "ADC",
+          "player": "Gabão",
+          "lp": -141
+        },
+        {
+          "role": "SUP",
+          "player": "Bughi",
+          "lp": -121
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": 178
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 162
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 174
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 143
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": 265
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -98
+        },
+        {
+          "role": "JNG",
+          "player": "Bughi",
+          "lp": -99
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": -125
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -154
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -102
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": 182
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 166
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 160
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 149
+        },
+        {
+          "role": "SUP",
+          "player": "Andrade",
+          "lp": 265
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -103
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -110
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -117
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -103
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -158
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 235
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 170
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 181
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": 262
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 218
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -123
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -114
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -111
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -105
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -134
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": 171
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 157
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 152
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": 238
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 200
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -135
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -106
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -111
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -97
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -122
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 194
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 144
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 268
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 130
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 284
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -104
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -98
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -96
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -134
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -117
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 178
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 134
+        },
+        {
+          "role": "MID",
+          "player": "Agressivinho",
+          "lp": 166
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 130
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 255
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -96
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -90
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -141
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -83
+        },
+        {
+          "role": "SUP",
+          "player": "Andrade",
+          "lp": -121
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 161
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 147
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 257
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 162
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 182
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -106
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -100
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -112
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -93
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -115
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 146
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 133
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 134
+        },
+        {
+          "role": "ADC",
+          "player": "Deuzao",
+          "lp": 152
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 163
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -115
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -90
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -135
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -96
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -103
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 169
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 172
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 176
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 156
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 187
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -137
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -107
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -115
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -103
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -122
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 168
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 141
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 144
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 128
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 151
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -91
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -87
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -91
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -81
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -96
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 169
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 142
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 139
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 130
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 153
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -92
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -89
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -95
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -84
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": -90
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 107
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 109
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 110
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 95
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 117
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -79
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -66
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -68
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -65
+        },
+        {
+          "role": "SUP",
+          "player": "Gui Barbosa",
+          "lp": -104
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 151
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 133
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 135
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 116
+        },
+        {
+          "role": "SUP",
+          "player": "Kauzador",
+          "lp": 155
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -89
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -87
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -89
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -135
+        },
+        {
+          "role": "SUP",
+          "player": "Gui Barbosa",
+          "lp": -136
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Valente",
+          "lp": 120
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 126
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 122
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 111
+        },
+        {
+          "role": "SUP",
+          "player": "Gui Barbosa",
+          "lp": 207
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -95
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -88
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -87
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -127
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -94
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 121
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 113
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 121
+        },
+        {
+          "role": "ADC",
+          "player": "Gui Barbosa",
+          "lp": 189
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 131
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -90
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -81
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -83
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -73
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": -156
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 172
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 180
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 173
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 168
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": 286
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Deuzao",
+          "lp": -128
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -122
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -224
+        },
+        {
+          "role": "ADC",
+          "player": "Gui Barbosa",
+          "lp": -183
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -138
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 248
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 111
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 107
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 98
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": 101
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -73
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -76
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -74
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -72
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -107
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Jouzera",
+          "lp": 146
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 121
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 230
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 118
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 258
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -83
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -78
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -82
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -77
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": -86
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 240
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 108
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 115
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 105
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": 120
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": -118
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -82
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -80
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -79
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -91
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": 167
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 99
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 104
+        },
+        {
+          "role": "ADC",
+          "player": "Bobzera",
+          "lp": 323
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 123
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": -131
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -76
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -75
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -70
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -93
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": 159
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 98
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 107
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": 203
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 119
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -104
+        },
+        {
+          "role": "JNG",
+          "player": "Tubinha",
+          "lp": -79
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -74
+        },
+        {
+          "role": "ADC",
+          "player": "Bobzera",
+          "lp": -171
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -119
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 60
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 59
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 58
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 54
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 65
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": -58
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -33
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -35
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -33
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -51
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 166
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 116
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 120
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 116
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": 207
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": -130
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -94
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -92
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -156
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": -101
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 129
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 92
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 99
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 92
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": 102
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": -96
+        },
+        {
+          "role": "JNG",
+          "player": "Buda",
+          "lp": -120
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -68
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -72
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -102
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 123
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 89
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 96
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 93
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": 361
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -75
+        },
+        {
+          "role": "JNG",
+          "player": "Buda",
+          "lp": -118
+        },
+        {
+          "role": "MID",
+          "player": "JP",
+          "lp": -71
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -65
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -101
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 122
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 88
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 95
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 91
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 117
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -75
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -78
+        },
+        {
+          "role": "MID",
+          "player": "Buda",
+          "lp": -113
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -65
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -180
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 104
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 87
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 93
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": 114
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": 149
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -84
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": -172
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -139
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -64
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": -112
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 129
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 111
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 102
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": 124
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 182
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -81
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -70
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -74
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -71
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -108
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 111
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 111
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 89
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": 108
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": 279
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": -101
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -69
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -64
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -61
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": -61
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 140
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 90
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 81
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 78
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": 103
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -70
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -56
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -59
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": -69
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -137
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 127
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": 212
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 195
+        },
+        {
+          "role": "ADC",
+          "player": "Servant",
+          "lp": 348
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 92
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -67
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -63
+        },
+        {
+          "role": "MID",
+          "player": "Valente",
+          "lp": -55
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -58
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": -196
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 134
+        },
+        {
+          "role": "JNG",
+          "player": "Deuzao",
+          "lp": 85
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 202
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 80
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": 89
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -75
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": -166
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -76
+        },
+        {
+          "role": "ADC",
+          "player": "Tubinha",
+          "lp": -70
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -71
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 93
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 104
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 82
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 102
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": 219
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Nightblu3",
+          "lp": -151
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -57
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -60
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -57
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": -62
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 100
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 111
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 88
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 110
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": 93
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -116
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -63
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -65
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -63
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -140
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 82
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 75
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 72
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 89
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": 177
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -88
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -61
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -52
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -49
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": -49
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 116
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 64
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 60
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 74
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": 57
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -46
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -50
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -41
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -39
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -80
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 74
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": 148
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 170
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 62
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": 311
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Nightblu3",
+          "lp": -132
+        },
+        {
+          "role": "JNG",
+          "player": "Agressivinho",
+          "lp": -62
+        },
+        {
+          "role": "MID",
+          "player": "Argemon",
+          "lp": -60
+        },
+        {
+          "role": "ADC",
+          "player": "Gui Barbosa",
+          "lp": -91
+        },
+        {
+          "role": "SUP",
+          "player": "Andrade",
+          "lp": -113
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": 354
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": 146
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": 131
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 63
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 85
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -56
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -54
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -108
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -51
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": -165
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 92
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": 138
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": 126
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 61
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 82
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": -173
+        },
+        {
+          "role": "JNG",
+          "player": "Tubinha",
+          "lp": -53
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -60
+        },
+        {
+          "role": "ADC",
+          "player": "Servant",
+          "lp": -173
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": -52
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 126
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 68
+        },
+        {
+          "role": "MID",
+          "player": "Andrey",
+          "lp": 284
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 61
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": 64
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -65
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": -91
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -51
+        },
+        {
+          "role": "ADC",
+          "player": "Servant",
+          "lp": -165
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -171
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 80
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 75
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 77
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 67
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": 304
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -70
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -53
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -54
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": -66
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -96
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": 86
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": 142
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 73
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 64
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 93
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -56
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -53
+        },
+        {
+          "role": "MID",
+          "player": "Andrey",
+          "lp": -158
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -52
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": -51
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": 227
+        },
+        {
+          "role": "JNG",
+          "player": "Buda",
+          "lp": 114
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 61
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 54
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": 78
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -75
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": -74
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -43
+        },
+        {
+          "role": "ADC",
+          "player": "JP",
+          "lp": -43
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -54
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": 83
+        },
+        {
+          "role": "JNG",
+          "player": "Agressivinho",
+          "lp": 80
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 66
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 58
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": 63
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -47
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -58
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -45
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -58
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": -135
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": 254
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": 135
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 71
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 91
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 85
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": -53
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -52
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -53
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -49
+        },
+        {
+          "role": "SUP",
+          "player": "shioN",
+          "lp": -187
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": 66
+        },
+        {
+          "role": "JNG",
+          "player": "Nightblu3",
+          "lp": 235
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 65
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 60
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": 86
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": -87
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -49
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -51
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -62
+        },
+        {
+          "role": "SUP",
+          "player": "shioN",
+          "lp": -164
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": 79
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 61
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 64
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 80
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 84
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -54
+        },
+        {
+          "role": "JNG",
+          "player": "Buda",
+          "lp": -81
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -107
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -44
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": -137
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 139
+        },
+        {
+          "role": "JNG",
+          "player": "Bughi",
+          "lp": 85
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 176
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 61
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 124
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -56
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": -88
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -51
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -50
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": -49
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Deuzao",
+          "lp": 67
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 69
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 83
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": 83
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 121
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": -142
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -49
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -50
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -47
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -87
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 104
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 61
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 58
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 73
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": 307
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": -121
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -43
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -44
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -40
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -75
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 96
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 57
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": 54
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 68
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": 210
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": -108
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": -69
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -42
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -39
+        },
+        {
+          "role": "SUP",
+          "player": "Kauzador",
+          "lp": -77
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andmat",
+          "lp": 156
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 60
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 58
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 53
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": 99
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -81
+        },
+        {
+          "role": "JNG",
+          "player": "Lustboy",
+          "lp": -74
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -44
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": -53
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -158
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": 32
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 23
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 24
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 23
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": 112
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Borapae",
+          "lp": -20
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -16
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -30
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -14
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": -20
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 118
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 97
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 116
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 93
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": 136
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": -98
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -77
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -77
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -70
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -258
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Deuzao",
+          "lp": 64
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 65
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 78
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 63
+        },
+        {
+          "role": "SUP",
+          "player": "Valente",
+          "lp": 64
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -59
+        },
+        {
+          "role": "JNG",
+          "player": "Buda",
+          "lp": -77
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -107
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -45
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": -66
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 21
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 17
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 16
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 15
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 22
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -17
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -12
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -11
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -9
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -18
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": 67
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 57
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 55
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 49
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": 220
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": -67
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -42
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": -90
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -119
+        },
+        {
+          "role": "SUP",
+          "player": "Bughi",
+          "lp": -49
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Nightblu3",
+          "lp": 223
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 55
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 131
+        },
+        {
+          "role": "ADC",
+          "player": "Bughi",
+          "lp": 64
+        },
+        {
+          "role": "SUP",
+          "player": "Argemon",
+          "lp": 77
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -49
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -41
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -42
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -38
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -122
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": null
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": null
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": null
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": null
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": null
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": null
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": null
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": null
+        },
+        {
+          "role": "ADC",
+          "player": "Servant",
+          "lp": null
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": null
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": 72
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 53
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": 140
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": 183
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 84
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -78
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -41
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -40
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -42
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -115
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Agressivinho",
+          "lp": 62
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 65
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 45
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": 151
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 71
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -62
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -33
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": -73
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -34
+        },
+        {
+          "role": "SUP",
+          "player": "JP",
+          "lp": -34
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 111
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 53
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 53
+        },
+        {
+          "role": "ADC",
+          "player": "Agressivinho",
+          "lp": 72
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": 83
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Jouzera",
+          "lp": -41
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -56
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": -88
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -39
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": -113
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 111
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 57
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 53
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 51
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": 150
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Jouzera",
+          "lp": -43
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -42
+        },
+        {
+          "role": "MID",
+          "player": "Nightblu3",
+          "lp": -136
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -113
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -62
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Valente",
+          "lp": 57
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 59
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 57
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 54
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": 192
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -82
+        },
+        {
+          "role": "JNG",
+          "player": "Agressivinho",
+          "lp": -59
+        },
+        {
+          "role": "MID",
+          "player": "Jouzera",
+          "lp": -46
+        },
+        {
+          "role": "ADC",
+          "player": "Andrade",
+          "lp": -117
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -104
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "JP",
+          "lp": 46
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 43
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 43
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 44
+        },
+        {
+          "role": "SUP",
+          "player": "Luisera",
+          "lp": 140
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -57
+        },
+        {
+          "role": "JNG",
+          "player": "Agressivinho",
+          "lp": -43
+        },
+        {
+          "role": "MID",
+          "player": "Nightblu3",
+          "lp": -99
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -31
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -72
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": 255
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": 68
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": 87
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 66
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": 294
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -70
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": -53
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": -53
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -50
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": -69
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": 152
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 40
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 40
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 38
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 55
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": -53
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -32
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -38
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -31
+        },
+        {
+          "role": "SUP",
+          "player": "Borapae",
+          "lp": -44
+        }
+      ]
+    }
+  },
+  {
+    "winner": "blue",
+    "teams": {
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": 99
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 49
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 50
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 47
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 66
+        }
+      ],
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": -108
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": -56
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -49
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -39
+        },
+        {
+          "role": "SUP",
+          "player": "Buda",
+          "lp": -67
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": 38
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 21
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 39
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": 14
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 17
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Tubinha",
+          "lp": -11
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -8
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -10
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": -8
+        },
+        {
+          "role": "SUP",
+          "player": "Gabão",
+          "lp": -16
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Gui Barbosa",
+          "lp": 112
+        },
+        {
+          "role": "JNG",
+          "player": "Argemon",
+          "lp": 63
+        },
+        {
+          "role": "MID",
+          "player": "Andmat",
+          "lp": 115
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 39
+        },
+        {
+          "role": "SUP",
+          "player": "Agressivinho",
+          "lp": 55
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Kauzador",
+          "lp": -57
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -34
+        },
+        {
+          "role": "MID",
+          "player": "Bughi",
+          "lp": -40
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -33
+        },
+        {
+          "role": "SUP",
+          "player": "Freakazoid",
+          "lp": -106
+        }
+      ]
+    }
+  },
+  {
+    "winner": "red",
+    "teams": {
+      "red": [
+        {
+          "role": "TOP",
+          "player": "Buda",
+          "lp": 98
+        },
+        {
+          "role": "JNG",
+          "player": "Valente",
+          "lp": 52
+        },
+        {
+          "role": "MID",
+          "player": "Deuzao",
+          "lp": 51
+        },
+        {
+          "role": "ADC",
+          "player": "Deft",
+          "lp": 48
+        },
+        {
+          "role": "SUP",
+          "player": "Nightblu3",
+          "lp": 204
+        }
+      ],
+      "blue": [
+        {
+          "role": "TOP",
+          "player": "Andrey",
+          "lp": -113
+        },
+        {
+          "role": "JNG",
+          "player": "JP",
+          "lp": -42
+        },
+        {
+          "role": "MID",
+          "player": "Gui Barbosa",
+          "lp": -91
+        },
+        {
+          "role": "ADC",
+          "player": "Jouzera",
+          "lp": -40
+        },
+        {
+          "role": "SUP",
+          "player": "Lustboy",
+          "lp": -84
+        }
+      ]
+    }
+  }
+]

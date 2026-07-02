@@ -1,0 +1,225 @@
+{
+  "championship": {
+    "name": "Parceria Vive League of Legends 2026",
+    "initialMMR": 833,
+    "players": [
+      {
+        "rank": 1,
+        "name": "Agressivinho",
+        "initialMMR": 833,
+        "finalMMR": 3772,
+        "wins": 38,
+        "losses": 15,
+        "winrate": 72
+      },
+      {
+        "rank": 2,
+        "name": "Deft",
+        "initialMMR": 833,
+        "finalMMR": 2737,
+        "wins": 41,
+        "losses": 35,
+        "winrate": 54
+      },
+      {
+        "rank": 3,
+        "name": "Jouzera",
+        "initialMMR": 833,
+        "finalMMR": 2574,
+        "wins": 35,
+        "losses": 35,
+        "winrate": 50
+      },
+      {
+        "rank": 4,
+        "name": "JP",
+        "initialMMR": 833,
+        "finalMMR": 2365,
+        "wins": 37,
+        "losses": 30,
+        "winrate": 55
+      },
+      {
+        "rank": 5,
+        "name": "Bughi",
+        "initialMMR": 833,
+        "finalMMR": 2273,
+        "wins": 27,
+        "losses": 26,
+        "winrate": 51
+      },
+      {
+        "rank": 6,
+        "name": "Deuzao",
+        "initialMMR": 833,
+        "finalMMR": 2166,
+        "wins": 39,
+        "losses": 29,
+        "winrate": 57
+      },
+      {
+        "rank": 7,
+        "name": "Buda",
+        "initialMMR": 833,
+        "finalMMR": 2118,
+        "wins": 16,
+        "losses": 14,
+        "winrate": 53
+      },
+      {
+        "rank": 8,
+        "name": "Argemon",
+        "initialMMR": 833,
+        "finalMMR": 1919,
+        "wins": 23,
+        "losses": 23,
+        "winrate": 50
+      },
+      {
+        "rank": 9,
+        "name": "Valente",
+        "initialMMR": 833,
+        "finalMMR": 1675,
+        "wins": 34,
+        "losses": 36,
+        "winrate": 49
+      },
+      {
+        "rank": 10,
+        "name": "Andmat",
+        "initialMMR": 833,
+        "finalMMR": 1538,
+        "wins": 11,
+        "losses": 10,
+        "winrate": 52
+      },
+      {
+        "rank": 11,
+        "name": "Tubinha",
+        "initialMMR": 833,
+        "finalMMR": 1488,
+        "wins": 22,
+        "losses": 29,
+        "winrate": 43
+      },
+      {
+        "rank": 12,
+        "name": "Kauzador",
+        "initialMMR": 833,
+        "finalMMR": 1468,
+        "wins": 14,
+        "losses": 18,
+        "winrate": 44
+      },
+      {
+        "rank": 13,
+        "name": "Lustboy",
+        "initialMMR": 833,
+        "finalMMR": 1439,
+        "wins": 10,
+        "losses": 13,
+        "winrate": 43
+      },
+      {
+        "rank": 14,
+        "name": "Andrey",
+        "initialMMR": 833,
+        "finalMMR": 1436,
+        "wins": 6,
+        "losses": 7,
+        "winrate": 46
+      },
+      {
+        "rank": 15,
+        "name": "shioN",
+        "initialMMR": 833,
+        "finalMMR": 1259,
+        "wins": 3,
+        "losses": 2,
+        "winrate": 60
+      },
+      {
+        "rank": 16,
+        "name": "Freakazoid",
+        "initialMMR": 833,
+        "finalMMR": 1214,
+        "wins": 4,
+        "losses": 6,
+        "winrate": 40
+      },
+      {
+        "rank": 17,
+        "name": "Borapae",
+        "initialMMR": 833,
+        "finalMMR": 1003,
+        "wins": 18,
+        "losses": 23,
+        "winrate": 44
+      },
+      {
+        "rank": 18,
+        "name": "Luisera",
+        "initialMMR": 833,
+        "finalMMR": 974,
+        "wins": 7,
+        "losses": 7,
+        "winrate": 50
+      },
+      {
+        "rank": 19,
+        "name": "Nightblu3",
+        "initialMMR": 833,
+        "finalMMR": 929,
+        "wins": 5,
+        "losses": 8,
+        "winrate": 38
+      },
+      {
+        "rank": 20,
+        "name": "Gui Barbosa",
+        "initialMMR": 833,
+        "finalMMR": 900,
+        "wins": 12,
+        "losses": 14,
+        "winrate": 46
+      },
+      {
+        "rank": 21,
+        "name": "Andrade",
+        "initialMMR": 833,
+        "finalMMR": 847,
+        "wins": 7,
+        "losses": 10,
+        "winrate": 41
+      },
+      {
+        "rank": 22,
+        "name": "Bobzera",
+        "initialMMR": 833,
+        "finalMMR": 823,
+        "wins": 1,
+        "losses": 2,
+        "winrate": 33
+      },
+      {
+        "rank": 23,
+        "name": "Gabão",
+        "initialMMR": 833,
+        "finalMMR": -465,
+        "wins": 4,
+        "losses": 20,
+        "winrate": 17
+      },
+      {
+        "rank": null,
+        "name": "Servant",
+        "initialMMR": 833,
+        "finalMMR": 843,
+        "wins": 1,
+        "losses": 3,
+        "winrate": 25,
+        "status": "Quitou o campeonato antes do término"
+      }
+    ]
+  }
+}
