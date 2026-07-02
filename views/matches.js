@@ -14,7 +14,7 @@ export function matches(c) {
 }
 
 function side(title, team) {
-  return `<h3>${escapeHtml(title)}</h3>${team.map(p => `<p>${escapeHtml(p.name)} <span class="pill">${escapeHtml(p.role || p.funcao || '')}</span> <b>${escapeHtml(p.lp ?? p.mmr ?? 0)}</b></p>`).join('')}`;
+  return `<div><h3>${escapeHtml(title)}</h3>${team.map(p => `<p>${escapeHtml(p.name)} <span class="pill">${escapeHtml(p.role || p.funcao || '')}</span> <b>${escapeHtml(p.lp ?? p.mmr ?? 0)}</b></p>`).join('')}</div>`;
 }
 
 function show(c, id) {
