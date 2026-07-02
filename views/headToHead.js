@@ -71,7 +71,7 @@ function renderH2HResult(entry, playerA, playerB) {
           <div style="font-size:1.3rem;">${entry.opposite.wins}/${entry.opposite.losses}</div>
           <div style="font-size:0.85rem;color:#94a3b8;margin-top:4px;">Vitórias / Derrotas</div>
           <div style="margin-top:10px;color:#fbcfe8;">${pct(entry.opposite.winrate)}</div>
-          <div style="font-size:0.85rem;color:#94a3b8;margin-top:4px;">% de vitórias quando jogaram em times opostos</div>
+          <div style="font-size:0.85rem;color:#94a3b8;margin-top:4px;">% de vitórias para <strong>${escapeHtml(entry.players[0])}</strong> quando jogaram em times opostos</div>
         </div>
       </div>
     </div>
