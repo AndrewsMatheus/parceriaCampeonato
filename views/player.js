@@ -19,11 +19,11 @@ export function player(championship, name = '') {
   const teammateBars = Object.entries(p.teammates)
     .sort((a, b) => b[1].matches - a[1].matches)
     .slice(0, 10)
-    .map(([label, value]) => ({ label, value: value.matches }));
+    .map(([label, value]) => ({ label: `${label} (${pct(value.winrate)})`, value: value.matches }));
   const rivalBars = Object.entries(p.opponents)
     .sort((a, b) => b[1].matches - a[1].matches)
     .slice(0, 10)
-    .map(([label, value]) => ({ label, value: value.matches }));
+    .map(([label, value]) => ({ label: `${label} (${pct(value.winrate)})`, value: value.matches }));
 
   return `
     <div class="page-head">
