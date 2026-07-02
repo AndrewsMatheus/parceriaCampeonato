@@ -19,11 +19,11 @@ export function player(championship, name = '') {
   const teammateBars = Object.entries(p.teammates)
     .sort((a, b) => b[1].matches - a[1].matches)
     .slice(0, 10)
-    .map(([label, value]) => ({ label: `${label} (${pct(value.winrate)})`, value: value.matches }));
+    .map(([label, value]) => ({ label, value: value.matches, hint: `${pct(value.winrate)} de winrate jogando com ${label}` }));
   const rivalBars = Object.entries(p.opponents)
     .sort((a, b) => b[1].matches - a[1].matches)
     .slice(0, 10)
-    .map(([label, value]) => ({ label: `${label} (${pct(value.winrate)})`, value: value.matches }));
+    .map(([label, value]) => ({ label, value: value.matches, hint: `${pct(value.winrate)} de winrate jogando contra ${label}` }));
 
   return `
     <div class="page-head">
@@ -34,13 +34,13 @@ export function player(championship, name = '') {
       ${kpi('MMR', fmt(p.finalMMR))}
       ${kpi('Vitórias', p.wins)}
       ${kpi('Derrotas', p.losses)}
-      ${kpi('Winrate', pct(p.winrate))}
+      ${kpi('Winrate', pct(p.winrate), 'Percentual de vitórias')}
     </div>
     <div class="grid two">
       <section class="card"><h3>MMR</h3>${lineChart([{ name: p.name, values: p.mmrHistory }])}</section>
       ${card('Funções', bars(roleBars))}
-      ${card('Parceiros', bars(teammateBars))}
-      ${card('Rivais', bars(rivalBars))}
+      ${card('Parceiros', `<p class="muted">Número de partidas com cada parceiro</p>${bars(teammateBars)}`)}
+      ${card('Rivais', `<p class="muted">Número de partidas contra cada rival</p>${bars(rivalBars)}`)}
     </div>
     <h2>Histórico</h2>
     ${table([

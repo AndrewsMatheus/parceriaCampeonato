@@ -34,5 +34,5 @@ export function barTower(items) {
 
 export function bars(items) {
   const max = Math.max(...items.map(i => i.value), 1);
-  return items.map(i => `<p><span>${escapeHtml(i.label)}</span> <b>${escapeHtml(i.value)}</b></p><div class="bar"><span style="width:${Number(i.value) / max * 100}%"></span></div>`).join('');
+  return items.map(i => `<p><span>${escapeHtml(i.label)}</span> <b>${escapeHtml(i.value)}</b>${i.hint ? ` <span class="muted">${escapeHtml(i.hint)}</span>` : ''}</p><div class="bar"><span style="width:${Number(i.value) / max * 100}%"></span></div>`).join('');
 }
