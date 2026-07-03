@@ -62,8 +62,3 @@ Este projeto só existiu graças à participação de toda a comunidade.
 Independentemente da posição no ranking, cada jogador contribuiu para tornar o campeonato mais competitivo e divertido. Foram dezenas de partidas, muitas disputas equilibradas, viradas inesperadas e momentos marcantes que fizeram do **Parceria Vive 2026** uma experiência única.
 
 Nos vemos na próxima edição! 🎮🏆
-
----
-
-Observação: coloque a imagem enviada em assets/podio-campeonato.png para que o README a exiba corretamente.
-
