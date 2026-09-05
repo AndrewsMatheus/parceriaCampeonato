@@ -1,7 +1,16 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "22"
-  NETLIFY_NEXT_SKEW_PROTECTION = "true"
+
+[[redirects]]
+  from = "/players"
+  to = "/ranking"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
