@@ -1,8 +1,8 @@
 import { HeadToHeadPanel } from '@/components/championship/head-to-head-panel';
-import { getChampionship } from '@/repositories/championship-file-repository';
+import { getChampionship } from '@/repositories/championship-repository';
 
-export default function HeadToHeadPage() {
-  const championship = getChampionship();
+export default async function HeadToHeadPage() {
+  const championship = await getChampionship();
 
   return <HeadToHeadPanel championship={championship} />;
 }

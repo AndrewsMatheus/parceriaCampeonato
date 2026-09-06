@@ -4,6 +4,7 @@ import { getSide, normalizePlayerEntry, winnerSide } from './normalizers';
 import type {
   Championship,
   ChampionshipStatistics,
+  ChampionStatRecord,
   GroupStat,
   HeadToHeadEntry,
   MatchSide,
@@ -14,9 +15,10 @@ import type {
   StatRecord,
 } from './types';
 
-function createEmptyPlayer(name: string): Player {
+function createEmptyPlayer(name: string, avatarUrl: string | null = null): Player {
   return {
     name,
+    avatarUrl,
     rank: 0,
     initialMMR: INITIAL_MMR,
     currentMMR: INITIAL_MMR,
@@ -26,6 +28,7 @@ function createEmptyPlayer(name: string): Player {
     winrate: 0,
     matches: [],
     roles: {},
+    champions: {},
     teammates: {},
     opponents: {},
     history: [],
@@ -59,6 +62,19 @@ function incrementStat(records: Record<string, StatRecord>, key: string, win: bo
   records[key].winrate = (records[key].wins / records[key].matches) * 100;
 }
 
+function incrementChampionStat(records: Record<string, ChampionStatRecord>, player: PlayerMatchEntry, win: boolean): void {
+  if (!player.champion) return;
+
+  records[player.champion] ??= {
+    ...createStatRecord(),
+    iconUrl: player.championIconUrl,
+  };
+  records[player.champion].matches += 1;
+  records[player.champion][win ? 'wins' : 'losses'] += 1;
+  records[player.champion].winrate = (records[player.champion].wins / records[player.champion].matches) * 100;
+  records[player.champion].iconUrl ||= player.championIconUrl;
+}
+
 function readRankingFields(row: RawRankingEntry, index: number) {
   return {
     name: row.name || row.player || row.jogador || row.nome || `Jogador ${index + 1}`,
@@ -67,6 +83,7 @@ function readRankingFields(row: RawRankingEntry, index: number) {
     wins: Number(row.wins || row.vitorias || 0),
     losses: Number(row.losses || row.derrotas || 0),
     winrate: Number(row.winrate || 0),
+    avatarUrl: row.avatarUrl || row.avatar_url || null,
   };
 }
 
@@ -95,7 +112,7 @@ export function buildChampionship(rawRanking: RawRankingEntry[] = [], rawMatches
     const fields = readRankingFields(row, index);
 
     championship.players[fields.name] = {
-      ...createEmptyPlayer(fields.name),
+      ...createEmptyPlayer(fields.name, fields.avatarUrl),
       rank: fields.rank,
       finalMMR: fields.finalMMR,
       records: {
@@ -107,7 +124,7 @@ export function buildChampionship(rawRanking: RawRankingEntry[] = [], rawMatches
     };
   });
 
-  rawMatches.forEach((match, index) => processMatch(championship, match, index + 1));
+  rawMatches.forEach((match, index) => processMatch(championship, match, Number(match.matchNumber ?? index + 1)));
 
   Object.values(championship.players).forEach(player => {
     player.winrate = player.matches.length ? (player.wins / player.matches.length) * 100 : player.winrate;
@@ -174,6 +191,8 @@ function updatePlayerFromMatch(
   player[side.win ? 'wins' : 'losses'] += 1;
   player.matches.push(matchNumber);
   player.history.push({
+    champion: matchPlayer.champion,
+    championIconUrl: matchPlayer.championIconUrl,
     match: matchNumber,
     result: side.win ? 'W' : 'L',
     role: matchPlayer.role,
@@ -197,6 +216,7 @@ function updatePlayerFromMatch(
   player.streaks.bestLoss = Math.max(player.streaks.bestLoss, player.streaks.currentLoss);
 
   incrementStat(player.roles, matchPlayer.role, side.win);
+  incrementChampionStat(player.champions, matchPlayer, side.win);
   side.team
     .filter(teammate => teammate.name !== matchPlayer.name)
     .forEach(teammate => incrementStat(player.teammates, teammate.name, side.win));

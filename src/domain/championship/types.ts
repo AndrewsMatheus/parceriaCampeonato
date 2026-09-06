@@ -19,6 +19,8 @@ export type RawRankingEntry = {
   losses?: number | string;
   derrotas?: number | string;
   winrate?: number | string;
+  avatarUrl?: string | null;
+  avatar_url?: string | null;
 };
 
 export type RankingPayload =
@@ -35,17 +37,58 @@ export type RawPlayerEntry = {
   player?: string;
   jogador?: string;
   nome?: string;
+  champion?: string;
+  championIconUrl?: string | null;
+  level?: number | string;
+  rankLabel?: string | null;
   role?: string;
   funcao?: string;
   cargo?: string;
   lp?: number | string;
   mmr?: number | string;
   delta?: number | string;
+  kills?: number | string;
+  deaths?: number | string;
+  assists?: number | string;
+  creepScore?: number | string;
+  cs?: number | string;
+  goldEarned?: number | string;
+  gold?: number | string;
+  killParticipation?: number | string;
+  visionScore?: number | string;
+  damageDealtChampions?: number | string;
+  damageTaken?: number | string;
+  turretDamage?: number | string;
+  wardsPlaced?: number | string;
+  wardsKilled?: number | string;
+  summonerSpells?: string[];
+  items?: string[];
+  runes?: string[];
 };
 
 export type RawMatch = {
+  matchNumber?: number | string;
   winner?: string;
   vencedor?: string;
+  queueType?: string;
+  mapName?: string;
+  durationSeconds?: number | string;
+  playedAt?: string;
+  gameId?: string;
+  blueKills?: number | string;
+  redKills?: number | string;
+  blueTowers?: number | string;
+  redTowers?: number | string;
+  blueDragons?: number | string;
+  redDragons?: number | string;
+  blueBarons?: number | string;
+  redBarons?: number | string;
+  blueHeralds?: number | string;
+  redHeralds?: number | string;
+  blueInhibitors?: number | string;
+  redInhibitors?: number | string;
+  blueBans?: string[];
+  redBans?: string[];
   blue?: RawPlayerEntry[];
   red?: RawPlayerEntry[];
   blueTeam?: RawPlayerEntry[];
@@ -58,8 +101,27 @@ export type RawMatch = {
 
 export type PlayerMatchEntry = {
   name: string;
+  champion?: string;
+  championIconUrl?: string | null;
+  level?: number;
+  rankLabel?: string | null;
   role: Role;
   lp: number;
+  kills?: number;
+  deaths?: number;
+  assists?: number;
+  creepScore?: number;
+  goldEarned?: number;
+  killParticipation?: number;
+  visionScore?: number;
+  damageDealtChampions?: number;
+  damageTaken?: number;
+  turretDamage?: number;
+  wardsPlaced?: number;
+  wardsKilled?: number;
+  summonerSpells?: string[];
+  items?: string[];
+  runes?: string[];
 };
 
 export type StatRecord = {
@@ -69,10 +131,16 @@ export type StatRecord = {
   winrate: number;
 };
 
+export type ChampionStatRecord = StatRecord & {
+  iconUrl?: string | null;
+};
+
 export type PlayerHistoryEntry = {
   match: number;
   result: 'W' | 'L';
   role: Role;
+  champion?: string;
+  championIconUrl?: string | null;
   delta: number;
   mmr: number;
   side: MatchSide;
@@ -88,6 +156,7 @@ export type PlayerRecords = {
 
 export type Player = {
   name: string;
+  avatarUrl?: string | null;
   rank: number;
   initialMMR: number;
   currentMMR: number;
@@ -97,6 +166,7 @@ export type Player = {
   winrate: number;
   matches: number[];
   roles: Record<string, StatRecord>;
+  champions: Record<string, ChampionStatRecord>;
   teammates: Record<string, StatRecord>;
   opponents: Record<string, StatRecord>;
   history: PlayerHistoryEntry[];

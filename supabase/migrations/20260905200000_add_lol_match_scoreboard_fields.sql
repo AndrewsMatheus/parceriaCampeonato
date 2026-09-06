@@ -1,0 +1,100 @@
+alter table public.matches
+  add column if not exists queue_type text not null default 'Personalizada',
+  add column if not exists map_name text not null default 'Summoner''s Rift',
+  add column if not exists duration_seconds integer,
+  add column if not exists played_at timestamptz,
+  add column if not exists game_id text,
+  add column if not exists blue_kills integer,
+  add column if not exists red_kills integer,
+  add column if not exists blue_towers integer,
+  add column if not exists red_towers integer,
+  add column if not exists blue_dragons integer,
+  add column if not exists red_dragons integer,
+  add column if not exists blue_barons integer,
+  add column if not exists red_barons integer,
+  add column if not exists blue_heralds integer,
+  add column if not exists red_heralds integer,
+  add column if not exists blue_inhibitors integer,
+  add column if not exists red_inhibitors integer,
+  add column if not exists blue_bans text[] not null default '{}',
+  add column if not exists red_bans text[] not null default '{}';
+
+alter table public.match_players
+  add column if not exists champion_name text,
+  add column if not exists champion_icon_url text,
+  add column if not exists level integer,
+  add column if not exists rank_label text,
+  add column if not exists kills integer,
+  add column if not exists deaths integer,
+  add column if not exists assists integer,
+  add column if not exists creep_score integer,
+  add column if not exists gold_earned integer,
+  add column if not exists kill_participation numeric(5,2),
+  add column if not exists vision_score integer,
+  add column if not exists damage_dealt_champions integer,
+  add column if not exists damage_taken integer,
+  add column if not exists turret_damage integer,
+  add column if not exists wards_placed integer,
+  add column if not exists wards_killed integer,
+  add column if not exists summoner_spells text[] not null default '{}',
+  add column if not exists items text[] not null default '{}',
+  add column if not exists runes text[] not null default '{}';
+
+drop view if exists public.championship_match_rows;
+
+create view public.championship_match_rows
+with (security_invoker = true)
+as
+select
+  c.slug as championship_slug,
+  m.match_number,
+  m.winner_side,
+  m.queue_type,
+  m.map_name,
+  m.duration_seconds,
+  m.played_at,
+  m.game_id,
+  m.blue_kills,
+  m.red_kills,
+  m.blue_towers,
+  m.red_towers,
+  m.blue_dragons,
+  m.red_dragons,
+  m.blue_barons,
+  m.red_barons,
+  m.blue_heralds,
+  m.red_heralds,
+  m.blue_inhibitors,
+  m.red_inhibitors,
+  m.blue_bans,
+  m.red_bans,
+  m.raw_data,
+  mp.side,
+  mp.role,
+  mp.lp_delta,
+  mp.champion_name,
+  mp.champion_icon_url,
+  mp.level,
+  mp.rank_label,
+  mp.kills,
+  mp.deaths,
+  mp.assists,
+  mp.creep_score,
+  mp.gold_earned,
+  mp.kill_participation,
+  mp.vision_score,
+  mp.damage_dealt_champions,
+  mp.damage_taken,
+  mp.turret_damage,
+  mp.wards_placed,
+  mp.wards_killed,
+  mp.summoner_spells,
+  mp.items,
+  mp.runes,
+  p.name as player_name
+from public.match_players mp
+inner join public.matches m on m.id = mp.match_id
+inner join public.players p on p.id = mp.player_id
+inner join public.championships c on c.id = m.championship_id;
+
+grant select on public.championship_match_rows to anon, authenticated;

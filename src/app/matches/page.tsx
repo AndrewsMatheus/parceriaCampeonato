@@ -1,8 +1,8 @@
 import { MatchesTable } from '@/components/championship/matches-table';
-import { getChampionship } from '@/repositories/championship-file-repository';
+import { getChampionship } from '@/repositories/championship-repository';
 
-export default function MatchesPage() {
-  const championship = getChampionship();
+export default async function MatchesPage() {
+  const championship = await getChampionship();
 
-  return <MatchesTable matches={championship.matches} />;
+  return <MatchesTable championship={championship} matches={championship.matches} />;
 }

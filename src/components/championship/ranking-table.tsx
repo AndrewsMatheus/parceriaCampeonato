@@ -1,13 +1,16 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useMemo, useState } from 'react';
 import { DataTable } from '@/components/ui/data-table';
 import { Input } from '@/components/ui/input';
+import { PlayerAvatar } from '@/components/championship/player-avatar';
 import { formatNumber, formatPercent } from '@/domain/championship/formatters';
 import type { Player } from '@/domain/championship/types';
 
 export function RankingTable({ players }: { players: Player[] }) {
+  const router = useRouter();
   const [search, setSearch] = useState('');
   const filteredPlayers = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase();
@@ -36,8 +39,9 @@ export function RankingTable({ players }: { players: Player[] }) {
             key: 'name',
             label: 'Jogador',
             render: player => (
-              <Link className="gold" href={`/player/${encodeURIComponent(player.name)}`}>
-                {player.name}
+              <Link className="gold inline-flex items-center gap-3" href={`/player/${encodeURIComponent(player.name)}`}>
+                <PlayerAvatar name={player.name} src={player.avatarUrl} />
+                <span>{player.name}</span>
               </Link>
             ),
           },
@@ -46,6 +50,8 @@ export function RankingTable({ players }: { players: Player[] }) {
           { key: 'losses', label: 'Derrotas', render: player => player.losses },
           { key: 'winrate', label: 'Winrate', render: player => formatPercent(player.winrate) },
         ]}
+        getRowKey={player => player.name}
+        onRowClick={player => router.push(`/player/${encodeURIComponent(player.name)}`)}
         rows={filteredPlayers}
       />
     </>

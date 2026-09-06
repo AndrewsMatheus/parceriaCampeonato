@@ -1,82 +1,81 @@
 'use client';
 
-import { useState } from 'react';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { DataTable } from '@/components/ui/data-table';
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog';
-import type { ProcessedMatch } from '@/domain/championship/types';
+import { useRouter } from 'next/navigation';
+import { ChampionPortrait } from '@/components/championship/champion-portrait';
+import { MatchManagementDialogs } from '@/components/championship/match-management-dialogs';
+import { PlayerAvatar } from '@/components/championship/player-avatar';
+import { formatNumber } from '@/domain/championship/formatters';
+import type { Championship, PlayerMatchEntry, ProcessedMatch } from '@/domain/championship/types';
 
-function MatchSide({ title, team }: { title: string; team: ProcessedMatch['blue'] }) {
+function MatchPlayerSummary({
+  championship,
+  player,
+  side,
+}: {
+  championship: Championship;
+  player: PlayerMatchEntry;
+  side: 'blue' | 'red';
+}) {
+  const profile = championship.players[player.name];
+
   return (
-    <div className="match-card">
-      <h3>{title}</h3>
-      {team.map(player => (
-        <p key={`${title}-${player.name}`}>
-          {player.name} <Badge variant="outline">{player.role}</Badge> <b>{player.lp}</b>
-        </p>
+    <span className={`match-summary-player is-${side}`}>
+      <ChampionPortrait champion={player.champion} iconUrl={player.championIconUrl} size="default" />
+      <span className="match-summary-copy">
+        <strong>{player.champion || 'Campeão pendente'}</strong>
+        <small>
+          <PlayerAvatar name={player.name} size="sm" src={profile?.avatarUrl} />
+          {player.name}
+        </small>
+      </span>
+      <span className="match-summary-role">{player.role}</span>
+    </span>
+  );
+}
+
+function TeamSummary({
+  championship,
+  players,
+  side,
+}: {
+  championship: Championship;
+  players: PlayerMatchEntry[];
+  side: 'blue' | 'red';
+}) {
+  return (
+    <div className={`match-summary-team is-${side}`}>
+      {players.map(player => (
+        <MatchPlayerSummary championship={championship} key={`${side}-${player.name}`} player={player} side={side} />
       ))}
     </div>
   );
 }
 
-export function MatchesTable({ matches }: { matches: ProcessedMatch[] }) {
-  const [selectedMatch, setSelectedMatch] = useState<ProcessedMatch | null>(null);
+export function MatchesTable({ championship, matches }: { championship: Championship; matches: ProcessedMatch[] }) {
+  const router = useRouter();
 
   return (
     <>
       <div className="page-head">
         <h1>Partidas</h1>
+        <MatchManagementDialogs />
       </div>
-      <DataTable
-        columns={[
-          { key: 'id', label: '#', render: match => match.id },
-          { key: 'winner', label: 'Vencedor', render: match => match.winner },
-          { key: 'blue', label: 'Azul', render: match => match.blue.map(player => player.name).join(', ') },
-          { key: 'red', label: 'Vermelho', render: match => match.red.map(player => player.name).join(', ') },
-          {
-            key: 'details',
-            label: 'Detalhes',
-            render: match => (
-              <Button onClick={() => setSelectedMatch(match)} type="button">
-                Abrir
-              </Button>
-            ),
-          },
-        ]}
-        rows={matches}
-      />
-      <Dialog onOpenChange={open => !open && setSelectedMatch(null)} open={Boolean(selectedMatch)}>
-        <DialogContent className="max-w-4xl">
-          {selectedMatch ? (
-            <>
-              <DialogHeader>
-                <DialogTitle>Partida {selectedMatch.id}</DialogTitle>
-                <DialogDescription>
-                  Vencedor: <b>{selectedMatch.winner}</b>
-                </DialogDescription>
-              </DialogHeader>
-              <div className="match-grid">
-                <MatchSide team={selectedMatch.blue} title="Time Azul" />
-                <MatchSide team={selectedMatch.red} title="Time Vermelho" />
-              </div>
-              <DialogFooter>
-                <DialogClose render={<Button type="button" />}>
-                  Fechar
-                </DialogClose>
-              </DialogFooter>
-            </>
-          ) : null}
-        </DialogContent>
-      </Dialog>
+      <div className="matches-list" aria-label="Lista de partidas">
+        {matches.map(match => (
+          <button className="match-list-row" key={match.id} onClick={() => router.push(`/matches/${match.id}`)} type="button">
+            <span className="match-list-meta">
+              <strong>{formatNumber(match.id)}</strong>
+              <span className={`match-winner is-${match.winner}`}>
+                {match.winner === 'blue' ? 'Azul' : 'Vermelho'}
+              </span>
+            </span>
+            <span className="match-list-teams">
+              <TeamSummary championship={championship} players={match.blue} side="blue" />
+              <TeamSummary championship={championship} players={match.red} side="red" />
+            </span>
+          </button>
+        ))}
+      </div>
     </>
   );
 }

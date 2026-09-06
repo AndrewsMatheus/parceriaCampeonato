@@ -1,8 +1,8 @@
 import { DashboardHome } from '@/components/championship/dashboard-home';
-import { getChampionship } from '@/repositories/championship-file-repository';
+import { getChampionship } from '@/repositories/championship-repository';
 
-export default function HomePage() {
-  const championship = getChampionship();
+export default async function HomePage() {
+  const championship = await getChampionship();
 
   return <DashboardHome championship={championship} />;
 }

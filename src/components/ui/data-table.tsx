@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { KeyboardEvent, MouseEvent, ReactNode } from 'react';
 import {
   Table,
   TableBody,
@@ -16,14 +16,31 @@ export type TableColumn<T> = {
 
 type DataTableProps<T> = {
   columns: TableColumn<T>[];
+  getRowKey?: (row: T, rowIndex: number) => string | number;
+  onRowClick?: (row: T, rowIndex: number) => void;
   rows: T[];
 };
 
-export function DataTable<T>({ columns, rows }: DataTableProps<T>) {
+export function DataTable<T>({ columns, getRowKey, onRowClick, rows }: DataTableProps<T>) {
+  function handleRowClick(event: MouseEvent<HTMLTableRowElement>, row: T, rowIndex: number) {
+    const target = event.target as HTMLElement;
+
+    if (target.closest('a, button, input, select, textarea')) return;
+
+    onRowClick?.(row, rowIndex);
+  }
+
+  function handleRowKeyDown(event: KeyboardEvent<HTMLTableRowElement>, row: T, rowIndex: number) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onRowClick?.(row, rowIndex);
+    }
+  }
+
   return (
-    <div className="overflow-hidden rounded-lg border border-border bg-card">
+    <div className="h-[520px] overflow-auto rounded-lg border border-border bg-card">
       <Table>
-        <TableHeader>
+        <TableHeader className="sticky top-0 z-10 bg-card">
           <TableRow>
             {columns.map(column => (
               <TableHead key={column.key}>{column.label}</TableHead>
@@ -31,13 +48,24 @@ export function DataTable<T>({ columns, rows }: DataTableProps<T>) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {rows.map((row, rowIndex) => (
-            <TableRow key={rowIndex}>
-              {columns.map(column => (
-                <TableCell key={column.key}>{column.render(row)}</TableCell>
-              ))}
-            </TableRow>
-          ))}
+          {rows.map((row, rowIndex) => {
+            const clickable = Boolean(onRowClick);
+
+            return (
+              <TableRow
+                className={clickable ? 'cursor-pointer' : undefined}
+                key={getRowKey ? getRowKey(row, rowIndex) : rowIndex}
+                onClick={onRowClick ? event => handleRowClick(event, row, rowIndex) : undefined}
+                onKeyDown={onRowClick ? event => handleRowKeyDown(event, row, rowIndex) : undefined}
+                role={clickable ? 'button' : undefined}
+                tabIndex={clickable ? 0 : undefined}
+              >
+                {columns.map(column => (
+                  <TableCell key={column.key}>{column.render(row)}</TableCell>
+                ))}
+              </TableRow>
+            );
+          })}
         </TableBody>
       </Table>
     </div>

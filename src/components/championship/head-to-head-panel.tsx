@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { PlayerAvatar } from '@/components/championship/player-avatar';
 import { DataTable } from '@/components/ui/data-table';
 import {
   Select,
@@ -9,11 +10,75 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { formatNumber, formatPercent } from '@/domain/championship/formatters';
 import { pairKey } from '@/domain/championship/keys';
-import { formatPercent } from '@/domain/championship/formatters';
-import type { Championship, HeadToHeadEntry } from '@/domain/championship/types';
+import type { Championship, HeadToHeadEntry, Player, StatRecord } from '@/domain/championship/types';
 
-function ResultPanel({ entry, playerA, playerB }: { entry?: HeadToHeadEntry; playerA: string; playerB: string }) {
+type HeadToHeadRow = {
+  opposite: StatRecord;
+  playerA: string;
+  playerB: string;
+  players: string;
+  same: StatRecord;
+  totalMatches: number;
+};
+
+function recordLabel(record: StatRecord) {
+  return `${formatNumber(record.wins)}V / ${formatNumber(record.losses)}D`;
+}
+
+function recordBalance(record: StatRecord) {
+  return record.wins - record.losses;
+}
+
+function playerProfile(championship: Championship, playerName: string): Player | undefined {
+  return championship.players[playerName];
+}
+
+function PlayerPill({ championship, playerName }: { championship: Championship; playerName: string }) {
+  const player = playerProfile(championship, playerName);
+
+  return (
+    <div className="h2h-player-pill">
+      <PlayerAvatar name={playerName} size="sm" src={player?.avatarUrl} />
+      <span>{playerName}</span>
+    </div>
+  );
+}
+
+function H2hStatCard({
+  description,
+  record,
+  title,
+}: {
+  description: string;
+  record: StatRecord;
+  title: string;
+}) {
+  return (
+    <div className="h2h-stat">
+      <div className="muted">{title}</div>
+      <div className="h2h-stat-value">{recordLabel(record)}</div>
+      <div className="gold">{formatPercent(record.winrate)}</div>
+      <div className="muted">
+        {formatNumber(record.matches)} partidas · saldo {formatNumber(recordBalance(record))}
+      </div>
+      <div className="muted">{description}</div>
+    </div>
+  );
+}
+
+function ResultPanel({
+  championship,
+  entry,
+  playerA,
+  playerB,
+}: {
+  championship: Championship;
+  entry?: HeadToHeadEntry;
+  playerA: string;
+  playerB: string;
+}) {
   if (!entry) {
     return (
       <div className="muted">
@@ -24,29 +89,22 @@ function ResultPanel({ entry, playerA, playerB }: { entry?: HeadToHeadEntry; pla
 
   return (
     <div className="h2h-result">
-      <div>
-        <strong>
-          Confronto direto: {playerA} vs {playerB}
-        </strong>
+      <div className="h2h-selected">
+        <PlayerPill championship={championship} playerName={entry.players[0]} />
+        <strong>vs</strong>
+        <PlayerPill championship={championship} playerName={entry.players[1]} />
       </div>
       <div className="h2h-stat-grid">
-        <div className="h2h-stat">
-          <div className="muted">Mesmo time</div>
-          <div className="h2h-stat-value">
-            {entry.same.wins}/{entry.same.losses}
-          </div>
-          <div className="muted">Vitórias / Derrotas</div>
-          <div className="gold">{formatPercent(entry.same.winrate)}</div>
-        </div>
-        <div className="h2h-stat">
-          <div className="muted">Adversários</div>
-          <div className="h2h-stat-value">
-            {entry.opposite.wins}/{entry.opposite.losses}
-          </div>
-          <div className="muted">Vitórias / Derrotas</div>
-          <div className="gold">{formatPercent(entry.opposite.winrate)}</div>
-          <div className="muted">% de vitórias para {entry.players[0]} quando jogaram em times opostos</div>
-        </div>
+        <H2hStatCard
+          description="Leitura de sinergia quando os dois caem no mesmo time."
+          record={entry.same}
+          title="Jogando juntos"
+        />
+        <H2hStatCard
+          description={`Winrate para ${entry.players[0]} quando eles ficam em lados opostos.`}
+          record={entry.opposite}
+          title="Frente a frente"
+        />
       </div>
     </div>
   );
@@ -57,11 +115,16 @@ export function HeadToHeadPanel({ championship }: { championship: Championship }
   const [playerA, setPlayerA] = useState(players[0] || '');
   const [playerB, setPlayerB] = useState(players[1] || players[0] || '');
   const entry = playerA && playerB && playerA !== playerB ? championship.headToHead[pairKey(playerA, playerB)] : undefined;
-  const rows = Object.values(championship.headToHead).map(headToHead => ({
-    players: headToHead.players.join(' vs '),
-    same: `${headToHead.same.wins}/${headToHead.same.losses} (${formatPercent(headToHead.same.winrate)})`,
-    opposite: `${headToHead.opposite.wins}/${headToHead.opposite.losses} (${formatPercent(headToHead.opposite.winrate)})`,
-  }));
+  const rows = Object.values(championship.headToHead)
+    .map<HeadToHeadRow>(headToHead => ({
+      opposite: headToHead.opposite,
+      playerA: headToHead.players[0],
+      playerB: headToHead.players[1],
+      players: headToHead.players.join(' vs '),
+      same: headToHead.same,
+      totalMatches: headToHead.same.matches + headToHead.opposite.matches,
+    }))
+    .sort((rowA, rowB) => rowB.totalMatches - rowA.totalMatches);
 
   function changePlayerA(nextPlayer: string) {
     setPlayerA(nextPlayer);
@@ -91,11 +154,11 @@ export function HeadToHeadPanel({ championship }: { championship: Championship }
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-              {players.map(player => (
-                <SelectItem key={player} value={player}>
-                  {player}
-                </SelectItem>
-              ))}
+                {players.map(player => (
+                  <SelectItem key={player} value={player}>
+                    {player}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </label>
@@ -107,24 +170,34 @@ export function HeadToHeadPanel({ championship }: { championship: Championship }
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-              {players.map(player => (
-                <SelectItem key={player} value={player}>
-                  {player}
-                </SelectItem>
-              ))}
+                {players.map(player => (
+                  <SelectItem key={player} value={player}>
+                    {player}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </label>
         </div>
-        {playerA === playerB ? <div className="muted">Escolha dois jogadores diferentes para ver o confronto direto.</div> : <ResultPanel entry={entry} playerA={playerA} playerB={playerB} />}
+        {playerA === playerB ? (
+          <div className="muted">Escolha dois jogadores diferentes para ver o confronto direto.</div>
+        ) : (
+          <ResultPanel championship={championship} entry={entry} playerA={playerA} playerB={playerB} />
+        )}
       </section>
       <div style={{ marginTop: '1rem' }}>
         <DataTable
           columns={[
             { key: 'players', label: 'Jogadores', render: row => row.players },
-            { key: 'same', label: 'Mesmo time V/D', render: row => row.same },
-            { key: 'opposite', label: 'Adversários V/D', render: row => row.opposite },
+            { key: 'totalMatches', label: 'Partidas', render: row => formatNumber(row.totalMatches) },
+            { key: 'same', label: 'Juntos', render: row => `${recordLabel(row.same)} · ${formatPercent(row.same.winrate)}` },
+            { key: 'opposite', label: 'Contra', render: row => `${recordLabel(row.opposite)} · ${formatPercent(row.opposite.winrate)}` },
           ]}
+          getRowKey={row => row.players}
+          onRowClick={row => {
+            setPlayerA(row.playerA);
+            setPlayerB(row.playerB);
+          }}
           rows={rows}
         />
       </div>

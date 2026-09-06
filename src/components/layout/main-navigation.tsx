@@ -11,7 +11,7 @@ import {
 import { cn } from '@/lib/utils';
 
 const routes = [
-  ['/', 'Home'],
+  ['/', 'Início'],
   ['/ranking', 'Ranking'],
   ['/matches', 'Partidas'],
   ['/head-to-head', 'Confrontos'],
