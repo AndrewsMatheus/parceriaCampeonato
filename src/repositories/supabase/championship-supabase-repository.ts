@@ -104,6 +104,10 @@ function toRawRanking(players: SupabasePlayerRow[]): RawRankingEntry[] {
 }
 
 function toRawMatches(matches: SupabaseMatchRow[]): RawMatch[] {
+  const roleOrder: Role[] = ['TOP', 'JNG', 'MID', 'ADC', 'SUP', 'UNK'];
+  const byRoleOrder = (playerA: SupabaseMatchPlayerRow, playerB: SupabaseMatchPlayerRow) => (
+    roleOrder.indexOf(playerA.role) - roleOrder.indexOf(playerB.role)
+  );
   const toRawPlayer = (player: SupabaseMatchPlayerRow) => ({
     assists: player.assists ?? undefined,
     champion: player.champion_name ?? undefined,
@@ -157,9 +161,11 @@ function toRawMatches(matches: SupabaseMatchRow[]): RawMatch[] {
       teams: {
         blue: match.match_players
           .filter(player => player.side === 'blue')
+          .sort(byRoleOrder)
           .map(toRawPlayer),
         red: match.match_players
           .filter(player => player.side === 'red')
+          .sort(byRoleOrder)
           .map(toRawPlayer),
       },
     }));
@@ -267,7 +273,7 @@ function championshipSelect(includeAvatarUrl: boolean, includeScoreboardFields: 
   `;
 }
 
-export async function getChampionshipFromSupabase(slug = 'parceria-vive-2026'): Promise<Championship> {
+export async function getChampionshipFromSupabase(slug = 'parceria-vive-2026-2'): Promise<Championship> {
   const supabase = createSupabaseClient();
 
   const queryChampionship = (includeAvatarUrl: boolean, includeScoreboardFields: boolean) => supabase

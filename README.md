@@ -73,6 +73,25 @@ NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 ```
 
+## 🗄️ Banco de dados
+
+As migrations ficam em `supabase/migrations`.
+
+```bash
+npx supabase start
+npx supabase db reset
+```
+
+A migration de seed carrega os dados atuais de ranking e partidas para o banco. A aplicação lê os dados exclusivamente pelo Supabase; sem as variáveis de ambiente configuradas, o build falha. Se o banco estiver vazio, o dashboard sobe sem dados.
+
+Para aplicar as migrations no projeto remoto:
+
+```bash
+npx supabase login
+npx supabase link --project-ref dunyqizketnphxgjjcvz
+npm run db:push
+```
+
 ## ❤️ Agradecimentos
 
 Este projeto só existiu graças à participação de toda a comunidade.

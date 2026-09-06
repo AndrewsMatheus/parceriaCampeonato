@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ChampionPortrait } from '@/components/championship/champion-portrait';
+import { MatchEditDialog } from '@/components/championship/match-edit-dialog';
 import { formatNumber, formatPercent } from '@/domain/championship/formatters';
 import { getChampionIconUrl } from '@/domain/championship/champion-assets';
 import type { Championship, MatchSide, PlayerMatchEntry } from '@/domain/championship/types';
@@ -258,7 +259,9 @@ export function MatchDetail({ championship, match }: MatchDetailProps) {
   }));
 
   return (
-    <div className="match-board">
+    <>
+      <MatchEditDialog championship={championship} match={match} />
+      <div className="match-board">
       <div className="match-board-top">
         <div className={`match-board-result is-blue is-${blueSummary.status}`}>
           <strong>{blueSummary.resultLabel}</strong>
@@ -296,6 +299,7 @@ export function MatchDetail({ championship, match }: MatchDetailProps) {
         <MatchBans bans={match.raw.blueBans} side="blue" />
         <MatchBans bans={match.raw.redBans} side="red" />
       </div>
-    </div>
+      </div>
+    </>
   );
 }

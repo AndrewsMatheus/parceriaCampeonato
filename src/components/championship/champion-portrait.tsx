@@ -14,7 +14,7 @@ function getInitials(name?: string | null) {
 }
 
 export function ChampionPortrait({ champion, className = '', iconUrl, size = 'default' }: ChampionPortraitProps) {
-  const resolvedIconUrl = iconUrl || getChampionIconUrl(champion);
+  const resolvedIconUrl = getChampionIconUrl(champion) || iconUrl;
 
   return (
     <span className={`champion-portrait is-${size} ${className}`} title={champion || 'Campeão'}>

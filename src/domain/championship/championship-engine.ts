@@ -76,9 +76,11 @@ function incrementChampionStat(records: Record<string, ChampionStatRecord>, play
 }
 
 function readRankingFields(row: RawRankingEntry, index: number) {
+  const rank = row.rank || row.position || row.posicao;
+
   return {
     name: row.name || row.player || row.jogador || row.nome || `Jogador ${index + 1}`,
-    rank: Number(row.rank || row.position || row.posicao || index + 1),
+    rank: rank ? Number(rank) : 0,
     finalMMR: Number(row.finalMMR || row.mmrFinal || row.mmr || row.currentMMR || INITIAL_MMR),
     wins: Number(row.wins || row.vitorias || 0),
     losses: Number(row.losses || row.derrotas || 0),
@@ -131,6 +133,7 @@ export function buildChampionship(rawRanking: RawRankingEntry[] = [], rawMatches
   });
 
   championship.ranking = Object.values(championship.players)
+    .filter(player => player.rank > 0)
     .sort((playerA, playerB) => playerB.finalMMR - playerA.finalMMR)
     .map((player, index) => ({ ...player, rank: index + 1 }));
   championship.statistics = buildStats(championship);

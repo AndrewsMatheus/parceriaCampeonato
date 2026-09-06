@@ -984,6 +984,213 @@ p {
   max-width: none;
 }
 
+.match-detail-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.match-edit-dialog {
+  width: min(1320px, calc(100vw - 2rem));
+  max-width: none;
+  max-height: min(92vh, 980px);
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.match-edit-form {
+  display: grid;
+  gap: 1rem;
+  min-height: 0;
+}
+
+.match-editor-players {
+  display: grid;
+  gap: 1rem;
+}
+
+.match-editor-player {
+  display: grid;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 0.95rem;
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: var(--panel-soft);
+}
+
+.match-editor-player.is-blue {
+  border-left-color: var(--blue);
+}
+
+.match-editor-player.is-red {
+  border-left-color: var(--red);
+}
+
+.match-editor-player-head {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1.1fr) minmax(12rem, 1.4fr) minmax(6rem, 0.6fr) minmax(6rem, 0.6fr) minmax(8rem, 0.8fr);
+  gap: 0.65rem;
+  align-items: end;
+  min-width: 0;
+}
+
+.match-editor-assets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  align-items: end;
+  min-width: 0;
+}
+
+.match-editor-player-stats {
+  display: grid;
+  grid-template-columns: repeat(13, minmax(4.6rem, 1fr));
+  gap: 0.55rem;
+  align-items: end;
+  min-width: 0;
+}
+
+.match-editor-items {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+  align-items: end;
+  min-width: 0;
+}
+
+.champion-select-content,
+.lol-asset-select-content {
+  max-height: min(420px, 55vh);
+}
+
+.champion-select-item,
+.lol-asset-select-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.lol-asset-select-item img {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.searchable-field {
+  position: relative;
+}
+
+.searchable-trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  min-width: 0;
+  border: 1px solid var(--input);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--foreground);
+  padding: 0.25rem 0.55rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.searchable-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.searchable-value img,
+.searchable-option img {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.searchable-value span {
+  overflow: hidden;
+  color: var(--foreground);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchable-placeholder,
+.searchable-option-empty {
+  color: var(--muted-foreground);
+}
+
+.searchable-popover {
+  position: absolute;
+  z-index: 70;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  display: grid;
+  gap: 0.45rem;
+  width: min(24rem, max(100%, 18rem));
+  max-width: calc(100vw - 2rem);
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--popover);
+  box-shadow: var(--shadow);
+}
+
+.searchable-input {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.searchable-input svg {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  color: var(--muted-foreground);
+}
+
+.searchable-list {
+  display: grid;
+  gap: 0.15rem;
+  max-height: min(320px, 48vh);
+  overflow-y: auto;
+}
+
+.searchable-option {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--foreground);
+  text-align: left;
+  cursor: pointer;
+}
+
+.searchable-option:hover,
+.searchable-option.is-selected {
+  background: var(--accent);
+}
+
+.searchable-option span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .match-form-scroll {
   display: grid;
   gap: 1rem;
@@ -1138,6 +1345,11 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .match-editor-player-head,
+  .match-editor-player-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .match-summary-team {
     grid-template-columns: 1fr;
   }
@@ -1244,6 +1456,10 @@ p {
 
   .form-grid.two,
   .form-grid.three,
+  .match-editor-assets,
+  .match-editor-items,
+  .match-editor-player-head,
+  .match-editor-player-stats,
   .match-list-row,
   .match-list-teams,
   .match-form-player-main,
