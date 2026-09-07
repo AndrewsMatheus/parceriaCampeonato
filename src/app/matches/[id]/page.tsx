@@ -3,7 +3,7 @@ import { MatchDetail } from '@/components/championship/match-detail';
 import { PanelCard } from '@/components/ui/panel-card';
 import { getChampionship } from '@/repositories/championship-repository';
 
-export const dynamicParams = false;
+export const dynamic = 'force-dynamic';
 
 const EMPTY_MATCH_PARAM = 'sem-dados';
 
@@ -12,15 +12,6 @@ type MatchPageProps = {
     id: string;
   }>;
 };
-
-export async function generateStaticParams() {
-  const championship = await getChampionship();
-  const matchParams = championship.matches.map(match => ({
-    id: String(match.id),
-  }));
-
-  return matchParams.length ? matchParams : [{ id: EMPTY_MATCH_PARAM }];
-}
 
 export default async function MatchPage({ params }: MatchPageProps) {
   const { id } = await params;

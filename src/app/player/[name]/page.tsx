@@ -3,7 +3,7 @@ import { PlayerProfile } from '@/components/championship/player-profile';
 import { PanelCard } from '@/components/ui/panel-card';
 import { getChampionship } from '@/repositories/championship-repository';
 
-export const dynamicParams = false;
+export const dynamic = 'force-dynamic';
 
 const EMPTY_PLAYER_PARAM = 'sem-dados';
 
@@ -12,15 +12,6 @@ type PlayerPageProps = {
     name: string;
   }>;
 };
-
-export async function generateStaticParams() {
-  const championship = await getChampionship();
-  const playerParams = championship.ranking.map(player => ({
-    name: encodeURIComponent(player.name),
-  }));
-
-  return playerParams.length ? playerParams : [{ name: EMPTY_PLAYER_PARAM }];
-}
 
 export default async function PlayerPage({ params }: PlayerPageProps) {
   const { name } = await params;
