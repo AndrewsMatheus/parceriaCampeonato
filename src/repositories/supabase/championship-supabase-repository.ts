@@ -314,5 +314,5 @@ export async function getChampionshipFromSupabase(slug = 'parceria-vive-2026-2')
     return createEmptyChampionship();
   }
 
-  return buildChampionship(toRawRanking(data.players ?? []), toRawMatches(data.matches ?? []));
+  return buildChampionship(toRawRanking(data.players ?? []), toRawMatches(data.matches.reverse() ?? []));
 }
