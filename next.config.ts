@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   outputFileTracingRoot: process.cwd(),
+  output: 'export',
   reactStrictMode: true,
 };
 
