@@ -115,6 +115,25 @@ function parseArrayInput(value: string) {
   return value.split(',').map(item => item.trim()).filter(Boolean);
 }
 
+function normalizeNumberInput(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const withoutSpaces = trimmed.replace(/[%\s]/g, '');
+  const normalized = withoutSpaces
+    .replace(/\.(?=\d{3}(\D|$))/g, '')
+    .replace(',', '.');
+  const parsed = Number(normalized);
+
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function normalizeIntegerInput(value: string) {
+  const parsed = normalizeNumberInput(value);
+
+  return parsed === null ? null : Math.trunc(parsed);
+}
+
 function findChampionIconUrl(championName: string) {
   return championOptions.find(champion => champion.name === championName)?.iconUrl ?? '';
 }
@@ -189,6 +208,51 @@ function createInitialState(match: Championship['matches'][number]): MatchFormSt
     redKills: toInputValue(match.raw.redKills),
     redTowers: toInputValue(match.raw.redTowers),
     winnerSide: match.winner,
+  };
+}
+
+function createPlayerPayload(player: PlayerFormState) {
+  return {
+    ...player,
+    assists: normalizeIntegerInput(player.assists),
+    creepScore: normalizeIntegerInput(player.creepScore),
+    damageDealtChampions: normalizeIntegerInput(player.damageDealtChampions),
+    damageTaken: normalizeIntegerInput(player.damageTaken),
+    deaths: normalizeIntegerInput(player.deaths),
+    goldEarned: normalizeIntegerInput(player.goldEarned),
+    items: player.items.filter(Boolean),
+    killParticipation: normalizeNumberInput(player.killParticipation),
+    kills: normalizeIntegerInput(player.kills),
+    level: normalizeIntegerInput(player.level),
+    lpDelta: normalizeIntegerInput(player.lpDelta),
+    runes: player.runes.filter(Boolean),
+    summonerSpells: player.summonerSpells.filter(Boolean),
+    turretDamage: normalizeIntegerInput(player.turretDamage),
+    visionScore: normalizeIntegerInput(player.visionScore),
+    wardsKilled: normalizeIntegerInput(player.wardsKilled),
+    wardsPlaced: normalizeIntegerInput(player.wardsPlaced),
+  };
+}
+
+function createMatchPayload(form: MatchFormState) {
+  return {
+    ...form,
+    blueBans: parseArrayInput(form.blueBans),
+    blueBarons: normalizeIntegerInput(form.blueBarons),
+    blueDragons: normalizeIntegerInput(form.blueDragons),
+    blueHeralds: normalizeIntegerInput(form.blueHeralds),
+    blueInhibitors: normalizeIntegerInput(form.blueInhibitors),
+    blueKills: normalizeIntegerInput(form.blueKills),
+    blueTowers: normalizeIntegerInput(form.blueTowers),
+    durationSeconds: normalizeIntegerInput(form.durationSeconds),
+    players: form.players.map(createPlayerPayload),
+    redBans: parseArrayInput(form.redBans),
+    redBarons: normalizeIntegerInput(form.redBarons),
+    redDragons: normalizeIntegerInput(form.redDragons),
+    redHeralds: normalizeIntegerInput(form.redHeralds),
+    redInhibitors: normalizeIntegerInput(form.redInhibitors),
+    redKills: normalizeIntegerInput(form.redKills),
+    redTowers: normalizeIntegerInput(form.redTowers),
   };
 }
 
@@ -479,17 +543,7 @@ export function MatchEditDialog({ championship, match }: MatchEditDialogProps) {
     setError(null);
     setSaving(true);
 
-    const payload = {
-      ...form,
-      blueBans: parseArrayInput(form.blueBans),
-      redBans: parseArrayInput(form.redBans),
-      players: form.players.map(player => ({
-        ...player,
-        items: player.items.filter(Boolean),
-        runes: player.runes.filter(Boolean),
-        summonerSpells: player.summonerSpells.filter(Boolean),
-      })),
-    };
+    const payload = createMatchPayload(form);
     const { error: updateError } = await supabase.rpc('update_match_details', {
       championship_slug: 'parceria-vive-2026-2',
       payload,
