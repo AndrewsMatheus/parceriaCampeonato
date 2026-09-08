@@ -1,9 +1,13 @@
+'use client';
+
 import Link from 'next/link';
+import { useMemo, useState } from 'react';
 import { ChampionPortrait } from '@/components/championship/champion-portrait';
 import { MatchEditDialog } from '@/components/championship/match-edit-dialog';
 import { formatNumber, formatPercent } from '@/domain/championship/formatters';
 import { getChampionIconUrl } from '@/domain/championship/champion-assets';
 import type { Championship, MatchSide, PlayerMatchEntry } from '@/domain/championship/types';
+import { getChampionshipFromSupabase } from '@/repositories/supabase/championship-supabase-repository';
 
 type MatchDetailProps = {
   championship: Championship;
@@ -243,24 +247,34 @@ function MatchBans({ bans, side }: { bans?: string[]; side: MatchSide }) {
 }
 
 export function MatchDetail({ championship, match }: MatchDetailProps) {
-  const blueSummary = getTeamSummary(match, 'blue');
-  const redSummary = getTeamSummary(match, 'red');
-  const duration = formatDuration(match.raw.durationSeconds);
+  const [currentChampionship, setCurrentChampionship] = useState(championship);
+  const currentMatch = useMemo(
+    () => currentChampionship.matches.find(item => item.id === match.id) ?? match,
+    [currentChampionship.matches, match],
+  );
+  const blueSummary = getTeamSummary(currentMatch, 'blue');
+  const redSummary = getTeamSummary(currentMatch, 'red');
+  const duration = formatDuration(currentMatch.raw.durationSeconds);
   const objectives: TeamObjective[] = [
-    { blue: match.raw.blueTowers, label: 'Torres', red: match.raw.redTowers },
-    { blue: match.raw.blueDragons, label: 'Dragões', red: match.raw.redDragons },
-    { blue: match.raw.blueBarons, label: 'Barões', red: match.raw.redBarons },
-    { blue: match.raw.blueHeralds, label: 'Arautos', red: match.raw.redHeralds },
-    { blue: match.raw.blueInhibitors, label: 'Inibidores', red: match.raw.redInhibitors },
+    { blue: currentMatch.raw.blueTowers, label: 'Torres', red: currentMatch.raw.redTowers },
+    { blue: currentMatch.raw.blueDragons, label: 'Dragões', red: currentMatch.raw.redDragons },
+    { blue: currentMatch.raw.blueBarons, label: 'Barões', red: currentMatch.raw.redBarons },
+    { blue: currentMatch.raw.blueHeralds, label: 'Arautos', red: currentMatch.raw.redHeralds },
+    { blue: currentMatch.raw.blueInhibitors, label: 'Inibidores', red: currentMatch.raw.redInhibitors },
   ];
-  const rows = Array.from({ length: Math.max(match.blue.length, match.red.length) }, (_, index) => ({
-    blue: match.blue[index],
-    red: match.red[index],
+  const rows = Array.from({ length: Math.max(currentMatch.blue.length, currentMatch.red.length) }, (_, index) => ({
+    blue: currentMatch.blue[index],
+    red: currentMatch.red[index],
   }));
+  const refreshMatch = async () => {
+    const refreshedChampionship = await getChampionshipFromSupabase();
+
+    setCurrentChampionship(refreshedChampionship);
+  };
 
   return (
     <>
-      <MatchEditDialog championship={championship} match={match} />
+      <MatchEditDialog championship={currentChampionship} match={currentMatch} onSaved={refreshMatch} />
       <div className="match-board">
       <div className="match-board-top">
         <div className={`match-board-result is-blue is-${blueSummary.status}`}>
@@ -271,10 +285,10 @@ export function MatchDetail({ championship, match }: MatchDetailProps) {
 
         <div className="match-board-title">
           <h1>
-            {match.raw.queueType || 'Personalizada'}
+            {currentMatch.raw.queueType || 'Personalizada'}
             {duration ? ` (${duration})` : ''}
           </h1>
-          <p>{match.raw.mapName || 'Summoner\'s Rift'}{match.raw.gameId ? ` - ID da partida ${match.raw.gameId}` : ''}</p>
+          <p>{currentMatch.raw.mapName || 'Summoner\'s Rift'}{currentMatch.raw.gameId ? ` - ID da partida ${currentMatch.raw.gameId}` : ''}</p>
         </div>
 
         <div className={`match-board-result is-red is-${redSummary.status}`}>
@@ -288,7 +302,7 @@ export function MatchDetail({ championship, match }: MatchDetailProps) {
         {rows.map(row => (
           <MatchBoardRow
             blue={row.blue}
-            championship={championship}
+            championship={currentChampionship}
             key={`${row.blue?.name || 'blue'}-${row.red?.name || 'red'}`}
             red={row.red}
           />
@@ -296,8 +310,8 @@ export function MatchDetail({ championship, match }: MatchDetailProps) {
       </div>
 
       <div className="match-board-footer">
-        <MatchBans bans={match.raw.blueBans} side="blue" />
-        <MatchBans bans={match.raw.redBans} side="red" />
+        <MatchBans bans={currentMatch.raw.blueBans} side="blue" />
+        <MatchBans bans={currentMatch.raw.redBans} side="red" />
       </div>
       </div>
     </>

@@ -31,6 +31,7 @@ import { createSupabaseBrowserClient } from '@/lib/supabase/client';
 type MatchEditDialogProps = {
   championship: Championship;
   match: Championship['matches'][number];
+  onSaved?: () => Promise<void> | void;
 };
 
 type PlayerFormState = {
@@ -516,7 +517,7 @@ function PlayerEditor({
   );
 }
 
-export function MatchEditDialog({ championship, match }: MatchEditDialogProps) {
+export function MatchEditDialog({ championship, match, onSaved }: MatchEditDialogProps) {
   const router = useRouter();
   const supabase = useMemo(() => createSupabaseBrowserClient(), []);
   const { isAdmin, isLoading } = useAdminAuth();
@@ -550,13 +551,21 @@ export function MatchEditDialog({ championship, match }: MatchEditDialogProps) {
       target_match_number: match.id,
     });
 
-    setSaving(false);
-
     if (updateError) {
+      setSaving(false);
       setError(updateError.message);
       return;
     }
 
+    try {
+      await onSaved?.();
+    } catch {
+      setSaving(false);
+      setError('A partida foi salva, mas não consegui atualizar a tela automaticamente. Recarregue a página para ver os dados novos.');
+      return;
+    }
+
+    setSaving(false);
     setOpen(false);
     router.refresh();
   }
