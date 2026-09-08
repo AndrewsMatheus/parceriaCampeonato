@@ -129,7 +129,13 @@ export function buildChampionship(rawRanking: RawRankingEntry[] = [], rawMatches
   rawMatches.forEach((match, index) => processMatch(championship, match, Number(match.matchNumber ?? index + 1)));
 
   Object.values(championship.players).forEach(player => {
-    player.winrate = player.matches.length ? (player.wins / player.matches.length) * 100 : player.winrate;
+    const reportedWins = player.records.reportedWins;
+    const reportedLosses = player.records.reportedLosses;
+    const reportedWinrate = player.records.reportedWinrate;
+
+    player.wins = reportedWins ?? player.wins;
+    player.losses = reportedLosses ?? player.losses;
+    player.winrate = reportedWinrate ?? (player.matches.length ? (player.wins / player.matches.length) * 100 : player.winrate);
   });
 
   championship.ranking = Object.values(championship.players)

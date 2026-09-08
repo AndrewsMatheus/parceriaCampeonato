@@ -5,5 +5,7 @@ export function formatNumber(value: number | string | undefined): string {
 }
 
 export function formatPercent(value: number | string | undefined): string {
-  return `${(Number(value) || 0).toFixed(1)}%`;
+  const number = Number(value) || 0;
+
+  return `${Number.isInteger(number) ? number.toFixed(0) : number.toFixed(1)}%`;
 }
