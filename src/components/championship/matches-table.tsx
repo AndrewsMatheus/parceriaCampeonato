@@ -61,7 +61,7 @@ export function MatchesTable({ championship, matches }: { championship: Champion
         <MatchManagementDialogs />
       </div>
       <div className="matches-list" aria-label="Lista de partidas">
-        {matches.map(match => (
+        {matches.reverse().map(match => (
           <button className="match-list-row" key={match.id} onClick={() => router.push(`/matches/${match.id}`)} type="button">
             <span className="match-list-meta">
               <strong>{formatNumber(match.id)}</strong>
